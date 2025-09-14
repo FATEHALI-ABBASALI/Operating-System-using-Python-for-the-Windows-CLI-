@@ -1,51 +1,86 @@
-# Operating-System-using-Python-for-the-Windows-CLI
-🖥️ Fam Word Operating System (FWOS)
-👨‍💻 Author: Fatehali Abbasali Moknojiya
-FWOS is a Python-based Operating System Shell with a Graphical Interface (GUI) built using tkinter. It simulates an OS terminal with commands like ls, cd, cat, grep, touch, vi, etc. It runs as a Python application (not a real kernel) and is designed for learning and fun 🚀.
-📦 Requirements
-🐍 Python 3.8+
-💻 Works on Linux, Windows, macOS
-📚 Pre-installed modules: os, sys, shlex, shutil, subprocess, glob, time, re, datetime, tkinter
-▶️ How to Run (Source Code)
-1️⃣ Clone or copy the FWOS project into a folder.
-2️⃣ Make sure you have Python installed: python3 --version
-3️⃣ Run the system: python3 fwos.py
-🛠️ Supported Commands
-•	man - 📖 Show help for commands
-•	pwd - 📂 Print working directory
-•	cd DIR - 📂 Change directory
-•	ls - 📋 List files and folders
-•	mkdir D - 📁 Create directory
-•	rmdir D - 🗑️ Remove empty directory
-•	cp A B - 📄➡️ Copy file
-•	mv A B - 📦➡️ Move file
-•	rm F - ❌ Remove file
-•	cat F - 📜 Show file contents
-•	more F - 📜➡️ Show file contents with paging
-•	chmod M F - 🔑 Change file permissions
-•	diff A B - 🔍 Compare two files
-•	grep P F - 🔎 Search text in file(s)
-•	wc F - 🧮 Count lines, words, chars
-•	ps - ⚙️ Show running processes
-•	kill PID - 💀 Kill process
-•	nice +N CMD - ⭐ Run with priority
-•	sleep N - ⏳ Wait N seconds
-•	batch S - 📜 Run script in background
-•	at TIME CMD - 🕒 Run command at scheduled time
-•	touch F - 🖊️ Create empty file / update timestamp
-•	vi F - 📝 GUI editor to edit a file (Save = Ctrl+S, Cancel = Ctrl+Q)
-•	clear - 🧹 Clear terminal screen
-•	exit - 🚪 Exit FWOS
-✨ Features
-💻 Custom GUI terminal built with tkinter
-📝 Interactive vi editor in GUI window
-🌍 Cross-platform: Linux, Windows, macOS
-⚡ Real commands simulated with Python
-🏁 Windows EXE Build (No Python Needed)
-You can convert fwos.py into a standalone Windows .exe using PyInstaller:
-1️⃣ Install PyInstaller: pip install pyinstaller
-2️⃣ Build EXE: pyinstaller --noconsole --onefile fwos.py
-3️⃣ Find EXE in dist/ folder, run fwos.exe on any Windows PC 🎉
-📜 License
-This project is for educational purposes only.
-Created by Fatehali Abbasali Moknojiya.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <h1>🖥️ Fam Word Operating System (FWOS)</h1>
+    <p>👨‍💻 Author: Fatehali Abbasali Moknojiya · Python GUI shell built with tkinter</p>
+  </header>
+
+  <h2>🚀 About FWOS</h2>
+  <p>FWOS — a playful Python OS shell with a GUI terminal.</p>
+  <p>FWOS simulates an OS terminal and ships common commands (ls, cd, cat, grep, touch, vi...). Runs as a Python application (not a real kernel) — great for learning and demos.</p>
+
+  <h2>📦 Requirements</h2>
+  <p>🐍 Python 3.8+</p>
+  <p>💻 Works on Linux, Windows, macOS</p>
+  <p>📚 Modules: os, sys, shlex, shutil, subprocess, glob, time, re, datetime, tkinter</p>
+
+  <h2>▶️ How to Run (Source)</h2>
+  <pre>
+# In terminal
+python3 fwos.py
+  </pre>
+
+  <h2>🛠️ Supported Commands</h2>
+  <p>man — 📖 Show help</p>
+  <p>pwd — 📂 Print working dir</p>
+  <p>cd — 📂 Change directory</p>
+  <p>ls — 📋 List files</p>
+  <p>mkdir — 📁 Create directory</p>
+  <p>rmdir — 🗑️ Remove empty dir</p>
+  <p>cp — 📄➡️ Copy file</p>
+  <p>mv — 📦➡️ Move file</p>
+  <p>rm — ❌ Remove file</p>
+  <p>cat — 📜 Show file</p>
+  <p>more — 📜➡️ Page view</p>
+  <p>chmod — 🔑 Change perms</p>
+  <p>diff — 🔍 Compare files</p>
+  <p>grep — 🔎 Search in files</p>
+  <p>wc — 🧮 Count lines/words/chars</p>
+  <p>ps — ⚙️ Show processes</p>
+  <p>kill — 💀 Kill process</p>
+  <p>nice — ⭐ Run with priority</p>
+  <p>sleep — ⏳ Wait</p>
+  <p>batch — 📜 Run script in bg</p>
+  <p>at — 🕒 Schedule command</p>
+  <p>touch — 🖊️ Create file / update time</p>
+  <p>vi — 📝 GUI editor (Ctrl+S save)</p>
+  <p>clear — 🧹 Clear screen</p>
+  <p>exit — 🚪 Exit FWOS</p>
+
+  <h2>✨ Features</h2>
+  <p>💻 GUI terminal built with tkinter</p>
+  <p>📝 Interactive editor window for editing files</p>
+  <p>🌍 Cross-platform support</p>
+  <p>⚡ Quick commands implemented in Python</p>
+
+  <h2>🏁 Windows EXE Build (No Python Needed)</h2>
+  <pre>
+pip install pyinstaller
+pyinstaller --noconsole --onefile fwos.py
+# find fwos.exe inside dist/
+  </pre>
+
+  <h2>🐙 GitHub README Support</h2>
+  <p>You can view, clone, or contribute to FWOS on GitHub:</p>
+  <p>🔗 Repository: https://github.com/yourusername/fwos</p>
+  <pre>
+git clone https://github.com/yourusername/fwos.git
+  </pre>
+  <p>💡 Contributions: Fork the repo, make changes, and submit a pull request.</p>
+  <p>📝 You can also copy this README.md content directly to GitHub for your project documentation.</p>
+
+  
+
+  <h2>License</h2>
+  <p>This project is for educational purposes only.<br>Created by Fatehali Abbasali Moknojiya.</p>
+
+  <h3>Made with ❤️ — FWOS</h3>
+
+</body>
+</html>
